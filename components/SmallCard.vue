@@ -1,5 +1,5 @@
 <template>
-  <b-link :to="`/products/${data.id}`" class="card-container">
+  <b-link :to="`/products/${data.id}`" class="card-container" :prefetch="true">
     <img :src="require(`@/assets/images/${data.image}`)" alt="" class="image" />
   </b-link>
 </template>

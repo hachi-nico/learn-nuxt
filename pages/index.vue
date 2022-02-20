@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar />
     <div class="container">
       <Hero />
       <LargeCardDisplay
@@ -8,7 +7,7 @@
         :key="item.id"
         :data="item"
       />
-      <SmallCardDisplay 
+      <SmallCardDisplay
         v-for="item in smallCardSections"
         :key="item.id"
         :data="item"
@@ -24,7 +23,7 @@ export default {
   data() {
     return {
       largeCardSections,
-      smallCardSections
+      smallCardSections,
     };
   },
 };

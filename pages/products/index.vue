@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar />
     <div class="conatiner">
       <LargeCardDisplay
         v-for="item in largeCardSections.slice(0, 1)"
