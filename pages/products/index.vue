@@ -1,14 +1,13 @@
 <template>
   <div>
     <Navbar />
-    <div class="container">
-      <Hero />
+    <div class="conatiner">
       <LargeCardDisplay
-        v-for="item in largeCardSections"
+        v-for="item in largeCardSections.slice(0, 1)"
         :key="item.id"
         :data="item"
       />
-      <SmallCardDisplay 
+      <SmallCardDisplay
         v-for="item in smallCardSections"
         :key="item.id"
         :data="item"
@@ -20,12 +19,13 @@
 <script>
 import { largeCardSections, smallCardSections } from "@/assets/data.js";
 export default {
-  name: "IndexPage",
   data() {
     return {
       largeCardSections,
-      smallCardSections
+      smallCardSections,
     };
   },
 };
 </script>
+
+<style lang="scss" scoped></style>

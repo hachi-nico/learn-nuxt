@@ -1,9 +1,9 @@
 <template>
-  <div class="card">
+  <b-link :to="`/products/${data.id}`" class="card">
     <img :src="require(`@/assets/images/${data.image}`)" alt="" class="image" />
     <h3 class="header">{{ data.header }}</h3>
     <p class="snippet">{{ data.snippet }}</p>
-  </div>
+  </b-link>
 </template>
 
 <script>
